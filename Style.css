@@ -1,0 +1,203 @@
+/* Changer le fond de la page en noir */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Fond noir */
+    color: #deb887; /* Texte de couleur dorée */
+    position: relative; /* Pour superposer les autres éléments sur la vidéo */
+}
+
+/* Empêche le défilement sur la page d'accueil */
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* Logo */
+.logo {
+    width: 400px;  /* Taille réduite du logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Gifs - Galerie et Contact */
+.gif-button {
+    width: 100px;  /* Taille réduite des GIFs */
+    height: auto;
+    margin: 10px;
+}
+
+/* Image aléatoire avec un style uniforme */
+.random-image {
+    width: 500px; /* Taille uniforme */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Espace entre l'image et le haut de la page */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Effet au survol de l'image */
+.random-image:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+/* Menu et bouton retour */
+.content {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style du bouton retour */
+.menu-button {
+    padding: 12px 24px;
+    background-color: #deb887; /* Fond doré pour les boutons */
+    color: #000; /* Texte noir pour contraster avec le fond doré */
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 20px; /* Espace entre l'image et le bouton */
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 200px;
+    transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+    background-color: #856d4D; /* Couleur plus foncée au survol */
+}
+
+/* Cache les boutons et le texte au départ */
+#menu, #volume-container, #infoText {
+    display: block;  /* Les rendre visibles dès le départ */
+}
+
+/* Style du texte */
+#infoText {
+    width: 90%;
+    max-width: 600px;
+    text-align: center; /* Centre le texte */
+    font-size: 24px;
+    color: white;
+    margin: 24px auto; /* Centre le bloc */
+    font-family: "Smooch Sans", serif;
+    text-shadow: 2px 2px 4px black; /* Ombre noire */
+}
+
+/* Style des paragraphes dans le texte */
+#infoText p {
+    margin: 10px 0; /* Espacement entre les phrases */
+    line-height: 1.5; /* Améliore la lisibilité */
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    color: #deb887; /* Texte du footer en couleur dorée */
+}
+
+/* Style du volume */
+.volume-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.volume-slider {
+    width: 300px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Style des boutons */
+.button {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px auto;
+    background-color: #deb887;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.button:hover {
+    background-color: #c9a36a;
+}
+
+/* Background vidéo */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Derrière le contenu */
+}
+
+/* Style spécifique pour la nouvelle page */
+.nouvelle-page {
+    background: url('photo_contact.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Style du popup (modale) pour "Join Us" */
+#joinUsModal {
+    display: none;  /* Caché par défaut */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Fond sombre */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    z-index: 1000; /* Assure que le popup soit au-dessus des autres éléments */
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+#joinUsModal .modal-content {
+    margin-bottom: 20px;
+}
+
+#joinUsModal button {
+    background-color: #deb887;
+    border: none;
+    padding: 12px 24px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+#joinUsModal button:hover {
+    background-color: #856d4D;
+}
+
+/* Style pour masquer le popup */
+#joinUsModal.hidden {
+    display: none !important;
+}
+
+/* Empêche le défilement sur la page d'accueil */
+body.no-scroll {
+    overflow: hidden;
+}

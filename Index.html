@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeptic</title>
+  <!-- Ajouter le favicon ici -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Lien vers le CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lien vers le JavaScript -->
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <img src="logo.png" alt="Logo Skeptic" class="logo">
+</header>
+
+    <!-- Image Join Us -->
+    <img id="joinImage" src="joinus.png" alt="Join Us" class="join-image">
+
+    <!-- Vidéo en fond -->
+    <video id="background-video" autoplay loop muted>
+        <source src="video.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo en fond.
+    </video>
+
+    <!-- Modal (Popup) pour "Join Us" -->
+    <div id="joinUsModal" class="hidden">
+        <div class="modal-content">
+            <h2>Merci de votre intérêt !</h2>
+            <p>Cliquez sur "Continuer" pour avancer.</p>
+        </div>
+        <button id="closeModalButton">Continuer</button>
+    </div>
+
+    <!-- Texte qui apparaîtra avec les boutons -->
+    <div id="infoText" class="hidden">
+        <p>Bienvenue, ici chez vous.</p>
+        <p>Prenez le temps de visiter cet espace qui vous appartient.</p>
+        <p>Y écouter les échos de milliers de mélodies résonnant en ces murs.</p>
+    </div>
+
+    <!-- Conteneur des boutons cachés -->
+    <nav id="menu" class="hidden">
+        <a href="galerie.html">
+            <img src="paint.gif" alt="Galerie" class="gif-button">
+        </a>
+        <a href="contact.html">
+            <img src="phone.gif" alt="Contact" class="gif-button">
+        </a>
+    </nav>
+
+    <footer class="footer">
+        <p>&copy; Skeptic!</p>
+    </footer>
+
+    <!-- Audio -->
+    <audio id="background-music" loop class="hidden">
+        <source src="musique.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+
+    <!-- Barre de réglage du volume -->
+    <div class="volume-container hidden" id="volume-container">
+        <input type="range" id="volume-control" min="0" max="1" step="0.1" value="0.5" class="volume-slider">
+    </div>
+
+    <script>
+        // Afficher le modal au clic sur l'image "Join Us"
+        document.getElementById("joinImage").addEventListener("click", function() {
+            // Cacher l'image "Join Us"
+            this.style.display = "none";
+
+            // Afficher le modal
+            document.getElementById("joinUsModal").style.display = "block";  // Afficher la popup
+
+            // Afficher les boutons et la musique après le clic
+            document.getElementById("menu").classList.remove("hidden");
+            document.getElementById("volume-container").classList.remove("hidden");
+        });
+
+        // Fermer le modal lorsqu'on clique sur le bouton "Continuer"
+        document.getElementById("closeModalButton").addEventListener("click", function() {
+            // Fermer la popup
+            document.getElementById("joinUsModal").style.display = "none";  // Masquer le popup
+
+            // Jouer la musique au premier clic
+            var music = document.getElementById("background-music");
+            music.play(); // Démarre la musique
+        });
+
+        // Réglage du volume
+        document.getElementById("volume-control").addEventListener("input", function() {
+            document.getElementById("background-music").volume = this.value;
+        });
+    </script>
+</body>
+</html>

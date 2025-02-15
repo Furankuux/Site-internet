@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeptic - Galerie</title>
+      <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Importation du CSS spécifique à la galerie -->
+    <link rel="stylesheet" href="gallery.css">
+    
+    <!-- Importation des polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Script JS spécifique à la galerie -->
+    <script defer src="gallery.js"></script>
+</head>
+
+<body class="Galerie">
+    <div class="content">
+        <!-- Image aléatoire (déclencheur pour la musique) -->
+        <img id="randomImage" src="images/default.jpg" alt="Image aléatoire" class="random-image music-trigger">
+
+        <!-- Affichage du nom du fichier audio joué -->
+        <p id="audioName" class="audio-name">Musique : </p>
+        
+        <!-- Barre de réglage du volume -->
+        <div class="volume-container">
+            <input type="range" id="volumeControl" class="volume-bar" min="0" max="1" step="0.01" value="0.5">
+        </div>
+
+        <!-- Texte d'information -->
+        <div id="infoText">
+            <p>Cliquer sur l'image pour changer de musique.</p>
+        </div>
+
+		 <!-- Image "more.png" avec le lien vers le site -->
+        <a href="https://my.bio/franckyfgs" target="_blank">
+            <img src="more.png" alt="Plus d'informations" class="more-image">
+        </a>
+		
+        <!-- Bouton de retour -->
+        <a href="index.html" class="menu-button">Retour</a>
+    </div>
+    <<body class="Galerie">
+    <div class="gif-container left">
+        <img src="gif_epee.gif" alt="GIF à gauche" class="left-gif">
+    </div>
+
+    <div class="gif-container right">
+        <img src="gif_epee.gif" alt="GIF à droite" class="right-gif">
+    </div>
+</body>
+
+	
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+	  <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        /* Ajout de styles pour aligner les boutons */
+        #social-links {
+            display: none;
+            justify-content: center;
+            gap: 20px; /* Espacement entre les boutons */
+            margin-top: 20px;
+        }
+        .social-button {
+            width: 300px; /* Ajuste la taille des boutons */
+            height: auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="nouvelle-page">
+    <!-- Contenu de la page -->
+    <div class="content">
+        <!-- Remplacer le texte par une image -->
+        <img id="contact-image" src="contact_us.png" alt="Contactez-nous" class="contact-image" style="cursor: pointer;">
+
+        <!-- Liens cachés au départ -->
+        <div id="social-links">
+            <a href="mailto:franckyfgs@gmail.com"><img src="mail.png" alt="Email" class="social-button"></a>
+            <a href="https://www.instagram.com/franck.fgs/" target="_blank"><img src="insta.png" alt="Instagram" class="social-button"></a>
+        </div>
+
+        <!-- Bouton retour -->
+        <a href="index.html" class="menu-button">Retour</a>
+    </div>
+
+    <!-- Musique de fond -->
+    <audio id="background-music-new" loop>
+        <source src="musique_contact.mp3" type="audio/mp3">
+        Votre navigateur ne supporte pas l’audio.
+    </audio>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var newMusic = document.getElementById("background-music-new");
+        var contactImage = document.getElementById("contact-image");
+        var socialLinks = document.getElementById("social-links");
+
+        // Jouer la musique après interaction utilisateur
+        if (newMusic) {
+            console.log("🟢 Musique trouvée, tentative de lecture...");
+            newMusic.volume = 0.5;
+
+            document.addEventListener("click", function () {
+                if (newMusic.paused) {
+                    newMusic.play().catch(error => console.warn("🔇 Lecture automatique bloquée :", error));
+                }
+            }, { once: true });
+        } else {
+            console.error("❌ Erreur : La musique de fond n'a pas été trouvée !");
+        }
+
+        // Afficher les liens après le clic sur l’image et la cacher
+        contactImage.addEventListener("click", function () {
+            contactImage.style.display = "none"; // Cache l’image
+            socialLinks.style.display = "flex"; // Affiche les liens
+        });
+    });
+    </script>
+</body>
+</html>

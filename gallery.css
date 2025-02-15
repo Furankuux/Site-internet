@@ -1,0 +1,152 @@
+/* Changer le fond de la page en utilisant l'image galerie_fond.jpg */
+body.Galerie {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('galerie_fond.jpg') no-repeat center center fixed; /* Arrière-plan */
+    background-size: cover;
+    color: #deb887; /* Texte doré */
+    position: relative;
+    transition: filter 1s ease-in-out; /* Transition fluide pour les filtres */
+}
+
+/* Image aléatoire avec un style uniforme */
+.random-image {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.random-image:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+/* Affichage du nom de la musique en dessous de l'image */
+.audio-name {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Barre de réglage du volume */
+.volume-container {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.volume-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.volume-bar::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: 5px;
+}
+
+.volume-bar::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    background: #deb887;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.volume-bar::-moz-range-track {
+    height: 8px;
+    border-radius: 5px;
+}
+
+.volume-bar::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #deb887;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Texte d'information */
+#infoText {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin: 24px auto;
+    font-family: "Smooch Sans", serif;
+    text-shadow: 2px 2px 4px black; /* Ombre noire */
+}
+
+/* Style du bouton retour */
+.menu-button {
+    padding: 12px 24px;
+    background-color: #deb887;
+    color: #000;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 200px;
+    transition: background-color 0.3s;
+    margin-left: auto;
+    margin-right: auto; /* Centrer le bouton */
+}
+
+.menu-button:hover {
+    background-color: #856d4D;
+}
+/* Conteneur pour les GIFs */
+.gif-container {
+    position: absolute;
+    top: 20px; /* Position verticale des GIFs */
+    z-index: 10; /* Pour s'assurer que le GIF soit au-dessus du contenu */
+}
+
+/* Positionnement du GIF à gauche */
+.gif-container.left {
+    left: 20px; /* Position horizontale à gauche */
+}
+
+/* Positionnement du GIF à droite */
+.gif-container.right {
+    right: 20px; /* Position horizontale à droite */
+}
+
+/* Style des GIFs */
+.left-gif, .right-gif {
+    width: 800px; /* Taille des GIFs */
+    height: auto;
+    border-radius: 10px; /* Facultatif: bordures arrondies */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+/* Style de l'image "more.png" */
+.more-image {
+    width: 150px; /* Ajustez la taille de l'image comme vous le souhaitez */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centré entre le texte et le bouton */
+    transition: transform 0.3s ease; /* Effet de zoom au survol */
+}
+
+.more-image:hover {
+    transform: scale(1.1); /* Légère augmentation de la taille au survol */
+}
