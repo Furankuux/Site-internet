@@ -150,3 +150,67 @@ body.Galerie {
 .more-image:hover {
     transform: scale(1.1); /* Légère augmentation de la taille au survol */
 }
+@media screen and (max-width: 768px) {
+    body.Galerie {
+        height: auto;
+        background-attachment: scroll; /* Évite le bug de fixation sur mobile */
+    }
+
+    .random-image {
+        width: 90%; /* Ajuste la taille de l'image */
+        margin: 10px auto;
+    }
+
+    #infoText {
+        font-size: 18px; /* Réduction de la taille du texte */
+        width: 95%;
+    }
+
+    .menu-button {
+        width: 150px; /* Réduit la taille du bouton */
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .gif-container {
+        top: 10px; /* Réduit l'espacement en haut */
+    }
+
+    .left-gif, .right-gif {
+        width: 100%; /* GIFs plus petits pour éviter qu'ils dépassent */
+        max-width: 350px;
+    }
+
+    .more-image {
+        width: 120px; /* Ajuste la taille de l'image */
+    }
+
+    .volume-container {
+        width: 90%;
+    }
+}
+
+/* Pour les très petits écrans (ex: iPhone SE, Galaxy A10) */
+@media screen and (max-width: 480px) {
+    .random-image {
+        width: 95%;
+    }
+
+    #infoText {
+        font-size: 16px;
+    }
+
+    .menu-button {
+        width: 130px;
+        padding: 8px;
+    }
+
+    .left-gif, .right-gif {
+        max-width: 250px;
+    }
+
+    .more-image {
+        width: 100px;
+    }
+}
+
