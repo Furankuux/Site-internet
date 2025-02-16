@@ -1,3 +1,6 @@
+.hidden {
+  display: none;
+}
 /* Changer le fond de la page en noir */
 body {
     font-family: Arial, sans-serif;
