@@ -23,25 +23,25 @@ body.no-scroll {
 
 /* Logo */
 .logo {
-    width: 400px;  /* Taille réduite du logo */
+    width: 20.83vw;  /* Taille réduite du logo */
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1.04vw;
 }
 
 /* Gifs - Galerie et Contact */
 .gif-button {
-    width: 100px;  /* Taille réduite des GIFs */
+    width: 5.21vw;  /* Taille réduite des GIFs */
     height: auto;
-    margin: 10px;
+    margin: 0.52vw;
 }
 
 /* Image aléatoire avec un style uniforme */
 .random-image {
-    width: 500px; /* Taille uniforme */
+    width: 26.04vw; /* Taille uniforme */
     height: auto;
     display: block;
-    margin: 20px auto; /* Espace entre l'image et le haut de la page */
-    border-radius: 10px;
+    margin: 1.04vw auto; /* Espace entre l'image et le haut de la page */
+    border-radius: 0.52vw;
     transition: transform 0.3s ease;
 }
 
@@ -64,16 +64,16 @@ body.no-scroll {
 
 /* Style du bouton retour */
 .menu-button {
-    padding: 12px 24px;
+    padding: 0.625vw 1.25vw;
     background-color: #deb887; /* Fond doré pour les boutons */
     color: #000; /* Texte noir pour contraster avec le fond doré */
     font-weight: bold;
-    border-radius: 8px;
-    margin-top: 20px; /* Espace entre l'image et le bouton */
+    border-radius: 0.42vw;
+    margin-top: 1.04vw; /* Espace entre l'image et le bouton */
     text-decoration: none;
     text-align: center;
     display: block;
-    width: 200px;
+    width: 10.42vw;
     transition: background-color 0.3s;
 }
 
@@ -89,25 +89,25 @@ body.no-scroll {
 /* Style du texte */
 #infoText {
     width: 90%;
-    max-width: 600px;
+    max-width: 31.25vw;
     text-align: center; /* Centre le texte */
-    font-size: 24px;
+    font-size: 1.25vw;
     color: white;
-    margin: 24px auto; /* Centre le bloc */
+    margin: 1.25vw auto; /* Centre le bloc */
     font-family: "Smooch Sans", serif;
-    text-shadow: 2px 2px 4px black; /* Ombre noire */
+    text-shadow: 0.104vw 0.104vw 0.21vw black; /* Ombre noire */
 }
 
 /* Style des paragraphes dans le texte */
 #infoText p {
-    margin: 10px 0; /* Espacement entre les phrases */
+    margin: 0.52vw 0; /* Espacement entre les phrases */
     line-height: 1.5; /* Améliore la lisibilité */
 }
 
 /* Footer */
 .footer {
     position: absolute;
-    bottom: 20px;
+    bottom: 1.04vw;
     text-align: center;
     color: #deb887; /* Texte du footer en couleur dorée */
 }
@@ -115,27 +115,27 @@ body.no-scroll {
 /* Style du volume */
 .volume-container {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.04vw;
 }
 
 .volume-slider {
-    width: 300px;
-    margin-top: 10px;
+    width: 15.63vw;
+    margin-top: 0.52vw;
     cursor: pointer;
 }
 
 /* Style des boutons */
 .button {
     display: block;
-    padding: 10px 20px;
-    margin: 10px auto;
+    padding: 0.52vw 1.04vw;
+    margin: 0.52vw auto;
     background-color: #deb887;
     color: black;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
-    width: 150px;
+    border-radius: 0.26vw;
+    width: 7.81vw;
 }
 
 .button:hover {
@@ -167,27 +167,27 @@ body.no-scroll {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.8); /* Fond sombre */
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1.04vw;
+    border-radius: 0.52vw;
     color: white;
     z-index: 1000; /* Assure que le popup soit au-dessus des autres éléments */
     text-align: center;
     width: 80%;
-    max-width: 500px;
+    max-width: 26.04vw;
 }
 
 #joinUsModal .modal-content {
-    margin-bottom: 20px;
+    margin-bottom: 1.04vw;
 }
 
 #joinUsModal button {
     background-color: #deb887;
     border: none;
-    padding: 12px 24px;
+    padding: 0.625vw 1.25vw;
     color: black;
-    font-size: 16px;
+    font-size: 0.83vw;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 0.417vw;
     transition: background-color 0.3s;
 }
 
@@ -203,70 +203,4 @@ body.no-scroll {
 /* Empêche le défilement sur la page d'accueil */
 body.no-scroll {
     overflow: hidden;
-}
-/* ==================== MEDIA QUERIES POUR MOBILES ==================== */
-@media screen and (max-width: 768px) {
-    body {
-        height: auto;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .logo {
-        width: 250px; /* Réduction du logo */
-        margin-bottom: 10px;
-    }
-
-    .gif-button {
-        width: 80px; /* Réduction des boutons GIF */
-        margin: 5px;
-    }
-
-    .random-image {
-        width: 90%; /* Adapte la largeur des images */
-        margin: 15px auto;
-    }
-
-    #infoText {
-        font-size: 18px; /* Réduction de la taille du texte */
-        width: 100%;
-        padding: 10px;
-    }
-
-    .menu-button {
-        width: 180px; /* Réduction des boutons */
-        padding: 10px;
-    }
-
-    .button {
-        width: 140px; /* Ajustement des autres boutons */
-    }
-
-    .volume-slider {
-        width: 200px; /* Ajustement du slider de volume */
-    }
-
-    .footer {
-        position: relative; /* Remonte le footer si nécessaire */
-        bottom: auto;
-        padding: 10px;
-    }
-}
-@media screen and (max-width: 480px) {
-    .logo {
-        width: 200px;
-    }
-
-    .random-image {
-        width: 95%;
-    }
-
-    #infoText {
-        font-size: 16px;
-    }
-
-    .menu-button, .button {
-        width: 150px;
-        padding: 8px;
-    }
 }
