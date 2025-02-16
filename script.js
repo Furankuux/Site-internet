@@ -137,6 +137,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (joinUs) {
         joinUs.addEventListener("click", function () {
             document.getElementsByClassName('hidden').classList.remove('hidden');
+            const elements = document.getElementsByClassName('hidden');
+            elements.forEach(function(element){
+            element.classList.remove('hidden');
+});
         });
     }
 });
