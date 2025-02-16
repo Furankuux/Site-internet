@@ -96,13 +96,15 @@ document.addEventListener("DOMContentLoaded", function () {
     var joinUsModal = document.getElementById("joinUsModal");  // Popup modale
     var closeModalButton = document.getElementById("closeModalButton"); // Bouton pour fermer le modal
 
-if (joinUsImage) {
-    joinUsImage.addEventListener("click", function () {
-        joinUsModal.style.display = "block";  // Afficher le popup
-const elements = document.getElementsByClassName('hidden');
-elements.forEach(function(element){
-    element.classList.remove('hidden');
-});
+    if (joinUsImage) {
+        joinUsImage.addEventListener("click", function () {
+            joinUsModal.style.display = "block";  // Afficher le popup
+            const elements = document.getElementsByClassName('hidden');
+            elements.forEach(function(element){
+                element.classList.remove('hidden');
+            });
+        });
+    }
 
     // 🎨 Désactiver le défilement au chargement de la page
     if (!document.body.classList.contains('no-scroll')) {
@@ -130,11 +132,12 @@ elements.forEach(function(element){
             document.body.classList.remove('no-scroll');
         });
     }
-        var joinUs = document.getElementById('joinImage');
-if (joinUs) {
-    joinUs.addEventListener("click", function () {
-        document.getElementsByClassName('hidden').classList.remove('hidden');
-    });
-}
+
+    var joinUs = document.getElementById('joinImage');
+    if (joinUs) {
+        joinUs.addEventListener("click", function () {
+            document.getElementsByClassName('hidden').classList.remove('hidden');
+        });
+    }
 });
 
