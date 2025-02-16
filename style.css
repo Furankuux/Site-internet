@@ -80,6 +80,10 @@ body.no-scroll {
 .menu-button:hover {
     background-color: #856d4D; /* Couleur plus foncée au survol */
 }
+#joinImage {
+  width: 80vw;
+  height: auto;  /* La hauteur s'ajuste automatiquement pour conserver les proportions */
+}
 
 /* Cache les boutons et le texte au départ */
 #menu, #volume-container, #infoText {
