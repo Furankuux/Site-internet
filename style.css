@@ -79,18 +79,22 @@ body.no-scroll {
 
 .menu-button:hover {
     background-color: #856d4D; /* Couleur plus foncée au survol */
-body {
-  display: flex;
-  justify-content: center;  /* Centre l'image horizontalement */
-  align-items: center;      /* Centre l'image verticalement */
-  height: 100vh;            /* Prend toute la hauteur du viewport */
-  margin: 0;                /* Supprime les marges par défaut du body */
-}
-
+  
 #joinImage {
   width: 80vw;
   height: auto;  /* La hauteur s'ajuste automatiquement pour conserver les proportions */
+  display: block; /* Important pour centrer l'image */
+  margin-left: auto;
+  margin-right: auto;  /* Cela centre l'image horizontalement */
 }
+#contact-image {
+  width: 80vw;
+  height: auto;  /* La hauteur s'ajuste automatiquement pour conserver les proportions */
+  display: block; /* Important pour centrer l'image */
+  margin-left: auto;
+  margin-right: auto;  /* Cela centre l'image horizontalement */
+}
+
 
 
 /* Cache les boutons et le texte au départ */
