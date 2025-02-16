@@ -8,7 +8,7 @@ body.Galerie {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('/galerie_fond.jpg') no-repeat center center fixed; /* Arrière-plan */
+    background: url('galerie_fond.jpg') no-repeat center center fixed; /* Arrière-plan */
     background-size: cover;
     color: #deb887; /* Texte doré */
     position: relative;
