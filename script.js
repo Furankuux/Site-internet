@@ -96,21 +96,13 @@ document.addEventListener("DOMContentLoaded", function () {
     var joinUsModal = document.getElementById("joinUsModal");  // Popup modale
     var closeModalButton = document.getElementById("closeModalButton"); // Bouton pour fermer le modal
 
-    // Afficher le modal au clic sur l'image "Join Us"
-    if (joinUsImage) {
-        joinUsImage.addEventListener("click", function () {
-            joinUsModal.style.display = "block";  // Afficher le popup
-            document.body.classList.add("no-scroll"); // Empêcher le défilement
-        });
-    }
-
-    // Fermer le modal lorsqu'on clique sur le bouton
-    if (closeModalButton) {
-        closeModalButton.addEventListener("click", function () {
-            joinUsModal.style.display = "none";  // Masquer le popup
-            document.body.classList.remove("no-scroll"); // Réactiver le défilement
-        });
-    }
+if (joinUsImage) {
+    joinUsImage.addEventListener("click", function () {
+        joinUsModal.style.display = "block";  // Afficher le popup
+const elements = document.getElementsByClassName('hidden');
+elements.forEach(function(element){
+    element.classList.remove('hidden');
+});
 
     // 🎨 Désactiver le défilement au chargement de la page
     if (!document.body.classList.contains('no-scroll')) {
