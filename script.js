@@ -130,10 +130,11 @@ elements.forEach(function(element){
             document.body.classList.remove('no-scroll');
         });
     }
-});
-var joinUs = document.getElementById('joinImage');
+        var joinUs = document.getElementById('joinImage');
 if (joinUs) {
     joinUs.addEventListener("click", function () {
         document.getElementsByClassName('hidden').classList.remove('hidden');
     });
 }
+});
+
