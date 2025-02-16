@@ -83,16 +83,10 @@ body.no-scroll {
 #joinImage {
   width: 80vw;
   height: auto;  /* La hauteur s'ajuste automatiquement pour conserver les proportions */
-  display: block; /* Important pour centrer l'image */
-  margin-left: auto;
-  margin-right: auto;  /* Cela centre l'image horizontalement */
 }
 #contact-image {
   width: 80vw;
   height: auto;  /* La hauteur s'ajuste automatiquement pour conserver les proportions */
-  display: block; /* Important pour centrer l'image */
-  margin-left: auto;
-  margin-right: auto;  /* Cela centre l'image horizontalement */
 }
 
 
