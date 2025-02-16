@@ -17,11 +17,11 @@ body.Galerie {
 
 /* Image aléatoire avec un style uniforme */
 .random-image {
-    width: 500px;
+    width: 26.04vw;
     height: auto;
     display: block;
-    margin: 20px auto;
-    border-radius: 10px;
+    margin: 1.04vw auto;
+    border-radius: 0.52vw;
     transition: transform 0.3s ease;
 }
 
@@ -31,24 +31,24 @@ body.Galerie {
 
 /* Affichage du nom de la musique en dessous de l'image */
 .audio-name {
-    font-size: 20px;
+    font-size: 1.04vw;
     color: white;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0.52vw;
 }
 
 /* Barre de réglage du volume */
 .volume-container {
     width: 80%;
-    max-width: 400px;
-    margin: 20px auto;
+    max-width: 20.83vw;
+    margin: 1.04vw auto;
 }
 
 .volume-bar {
     width: 100%;
-    height: 8px;
+    height: 0.42vw;
     background: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
+    border-radius: 0.26vw;
     -webkit-appearance: none;
     appearance: none;
     outline: none;
@@ -56,13 +56,13 @@ body.Galerie {
 }
 
 .volume-bar::-webkit-slider-runnable-track {
-    height: 8px;
-    border-radius: 5px;
+    height: 0.42vw;
+    border-radius: 0.26vw;
 }
 
 .volume-bar::-webkit-slider-thumb {
-    width: 20px;
-    height: 20px;
+    width: 1.04vw;
+    height: 1.04vw;
     background: #deb887;
     border-radius: 50%;
     -webkit-appearance: none;
@@ -70,13 +70,13 @@ body.Galerie {
 }
 
 .volume-bar::-moz-range-track {
-    height: 8px;
-    border-radius: 5px;
+    height: 0.42vw;
+    border-radius: 0.26vw;
 }
 
 .volume-bar::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
+    width: 1.04vw;
+    height: 1.04vw;
     background: #deb887;
     border-radius: 50%;
     cursor: pointer;
@@ -85,27 +85,27 @@ body.Galerie {
 /* Texte d'information */
 #infoText {
     width: 90%;
-    max-width: 600px;
+    max-width: 31.25vw;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.25vw;
     color: white;
-    margin: 24px auto;
+    margin: 1.25vw auto;
     font-family: "Smooch Sans", serif;
-    text-shadow: 2px 2px 4px black; /* Ombre noire */
+    text-shadow: 0.1042vw 0.1042vw 0.2083vw black; /* Ombre noire */
 }
 
 /* Style du bouton retour */
 .menu-button {
-    padding: 12px 24px;
+    padding: 0.625vw 1.25vw;
     background-color: #deb887;
     color: #000;
     font-weight: bold;
-    border-radius: 8px;
-    margin-top: 20px;
+    border-radius: 0.42vw;
+    margin-top: 1.04vw;
     text-decoration: none;
     text-align: center;
     display: block;
-    width: 200px;
+    width: 10.42vw;
     transition: background-color 0.3s;
     margin-left: auto;
     margin-right: auto; /* Centrer le bouton */
@@ -117,100 +117,37 @@ body.Galerie {
 /* Conteneur pour les GIFs */
 .gif-container {
     position: absolute;
-    top: 20px; /* Position verticale des GIFs */
+    top: 1.04vw; /* Position verticale des GIFs */
     z-index: 10; /* Pour s'assurer que le GIF soit au-dessus du contenu */
 }
 
 /* Positionnement du GIF à gauche */
 .gif-container.left {
-    left: 20px; /* Position horizontale à gauche */
+    left: 1.04vw; /* Position horizontale à gauche */
 }
 
 /* Positionnement du GIF à droite */
 .gif-container.right {
-    right: 20px; /* Position horizontale à droite */
+    right: 1.04vw; /* Position horizontale à droite */
 }
 
 /* Style des GIFs */
 .left-gif, .right-gif {
-    width: 800px; /* Taille des GIFs */
+    width: 41.67vw; /* Taille des GIFs */
     height: auto;
-    border-radius: 10px; /* Facultatif: bordures arrondies */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    border-radius: 0.52vw; /* Facultatif: bordures arrondies */
+    box-shadow: 0 0.2083vw 0.3125vw rgba(0, 0, 0, 0.1); /* Ombre portée */
 }
 /* Style de l'image "more.png" */
 .more-image {
-    width: 150px; /* Ajustez la taille de l'image comme vous le souhaitez */
+    width: 7.81vw; /* Ajustez la taille de l'image comme vous le souhaitez */
     height: auto;
     display: block;
-    margin: 20px auto; /* Centré entre le texte et le bouton */
+    margin: 1.04vw auto; /* Centré entre le texte et le bouton */
     transition: transform 0.3s ease; /* Effet de zoom au survol */
 }
 
 .more-image:hover {
     transform: scale(1.1); /* Légère augmentation de la taille au survol */
-}
-@media screen and (max-width: 768px) {
-    body.Galerie {
-        height: auto;
-        background-attachment: scroll; /* Évite le bug de fixation sur mobile */
-    }
-
-    .random-image {
-        width: 90%; /* Ajuste la taille de l'image */
-        margin: 10px auto;
-    }
-
-    #infoText {
-        font-size: 18px; /* Réduction de la taille du texte */
-        width: 95%;
-    }
-
-    .menu-button {
-        width: 150px; /* Réduit la taille du bouton */
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .gif-container {
-        top: 10px; /* Réduit l'espacement en haut */
-    }
-
-    .left-gif, .right-gif {
-        width: 100%; /* GIFs plus petits pour éviter qu'ils dépassent */
-        max-width: 350px;
-    }
-
-    .more-image {
-        width: 120px; /* Ajuste la taille de l'image */
-    }
-
-    .volume-container {
-        width: 90%;
-    }
-}
-
-/* Pour les très petits écrans (ex: iPhone SE, Galaxy A10) */
-@media screen and (max-width: 480px) {
-    .random-image {
-        width: 95%;
-    }
-
-    #infoText {
-        font-size: 16px;
-    }
-
-    .menu-button {
-        width: 130px;
-        padding: 8px;
-    }
-
-    .left-gif, .right-gif {
-        max-width: 250px;
-    }
-
-    .more-image {
-        width: 100px;
-    }
 }
 
