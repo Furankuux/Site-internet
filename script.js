@@ -131,3 +131,9 @@ elements.forEach(function(element){
         });
     }
 });
+var joinUs = document.getElementById('joinImage');
+if (joinUs) {
+    joinUs.addEventListener("click", function () {
+        document.getElementsByClassName('hidden').classList.remove('hidden');
+    });
+}
