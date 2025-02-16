@@ -204,3 +204,51 @@ body.no-scroll {
 body.no-scroll {
     overflow: hidden;
 }
+/* ==================== MEDIA QUERIES POUR MOBILES ==================== */
+@media screen and (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 250px; /* Réduction du logo */
+        margin-bottom: 10px;
+    }
+
+    .gif-button {
+        width: 80px; /* Réduction des boutons GIF */
+        margin: 5px;
+    }
+
+    .random-image {
+        width: 90%; /* Adapte la largeur des images */
+        margin: 15px auto;
+    }
+
+    #infoText {
+        font-size: 18px; /* Réduction de la taille du texte */
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu-button {
+        width: 180px; /* Réduction des boutons */
+        padding: 10px;
+    }
+
+    .button {
+        width: 140px; /* Ajustement des autres boutons */
+    }
+
+    .volume-slider {
+        width: 200px; /* Ajustement du slider de volume */
+    }
+
+    .footer {
+        position: relative; /* Remonte le footer si nécessaire */
+        bottom: auto;
+        padding: 10px;
+    }
+}
