@@ -1,5 +1,5 @@
 .hidden {
-  display: none;
+  display: none !important;
 }
 /* Changer le fond de la page en noir */
 body {
