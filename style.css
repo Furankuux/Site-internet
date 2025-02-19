@@ -212,4 +212,8 @@ body.no-scroll {
 body.no-scroll {
     overflow: hidden;
 }
-
+.social-button {
+    width: 5.21vw;  /* Taille réduite des icones */
+    height: auto;
+    margin: 0.52vw;
+}
