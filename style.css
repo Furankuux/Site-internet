@@ -23,7 +23,7 @@ body.no-scroll {
 
 /* Logo */
 .logo {
-    width: 20.83vw;  /* Taille réduite du logo */
+    width: 30vw;  /* Taille réduite du logo */
     height: auto;
     margin-bottom: 1.04vw;
 }
@@ -101,7 +101,7 @@ body.no-scroll {
     width: 90%;
     max-width: 31.25vw;
     text-align: center; /* Centre le texte */
-    font-size: 1.25vw;
+    font-size: 5vw;
     color: white;
     margin: 1.25vw auto; /* Centre le bloc */
     font-family: "Smooch Sans", serif;
@@ -212,8 +212,13 @@ body.no-scroll {
 body.no-scroll {
     overflow: hidden;
 }
-#social-links {
-    width: 5.21vw;  /* Taille réduite des icones */
+#menu {
+    width: 15vw.;  /* Taille réduite des icones */
     height: auto;
     margin: 0.52vw;
+}
+#volume-control {
+    width: 10vw;  /* Taille réduite du slider de volume */
+    height: auto;
+    margin-bottom: 1.04vw;
 }
