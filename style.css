@@ -23,16 +23,16 @@ body.no-scroll {
 
 /* Logo */
 .logo {
-    width: 30vw;  /* Taille réduite du logo */
+    width: 50vw;  /* Taille réduite du logo */
     height: auto;
-    margin-bottom: 1.04vw;
+    margin-bottom: 5vw;
 }
 
 /* Gifs - Galerie et Contact */
 .gif-button {
-    width: 5.21vw;  /* Taille réduite des GIFs */
+    width: 20vw;  /* Taille réduite des GIFs */
     height: auto;
-    margin: 0.52vw;
+    margin: 5vw;
 }
 
 /* Image aléatoire avec un style uniforme */
@@ -211,11 +211,6 @@ body.no-scroll {
 /* Empêche le défilement sur la page d'accueil */
 body.no-scroll {
     overflow: hidden;
-}
-#menu {
-    width: 15vw.;  /* Taille réduite des icones */
-    height: auto;
-    margin: 0.52vw;
 }
 #volume-control {
     width: 10vw;  /* Taille réduite du slider de volume */
