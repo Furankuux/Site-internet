@@ -79,7 +79,7 @@ body.no-scroll {
 
 .menu-button:hover {
     background-color: #856d4D; /* Couleur plus foncée au survol */
-  
+}
 #joinImage {
   width: 80vw;
   height: auto;  /* La hauteur s'ajuste automatiquement pour conserver les proportions */
@@ -220,4 +220,8 @@ body.no-scroll {
     height: 100%;
     object-fit: cover;
     z-index: -1; /* Derrière le contenu */
+}
+.nouvelle-page {
+    background: url('photo_contact.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
