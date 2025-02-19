@@ -212,16 +212,4 @@ body.no-scroll {
 body.no-scroll {
     overflow: hidden;
 }
-#background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Derrière le contenu */
-}
-.nouvelle-page {
-    background: url('photo_contact.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
+
