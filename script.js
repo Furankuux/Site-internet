@@ -1,3 +1,7 @@
+if (window.matchMedia("(max-width: 768px)").matches) {
+    document.body.classList.add("mobile");
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     console.log("✅ Script chargé et DOM prêt !");
 
