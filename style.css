@@ -23,11 +23,11 @@ body.no-scroll {
 
 /* Logo */
 .logo {
-    width: 15vw;  /* Taille réduite du logo */
+    width: 20vw;  /* Taille réduite du logo */
     height: auto;
     margin-bottom: 5vw;
     position: relative; /* Assure que l'image reste dans son conteneur */
-    top: 0;             /* L'image commence bien en haut */
+    top: 7;             /* L'image commence bien en haut */
 }
 /* Gifs - Galerie et Contact */
 .gif-button {
