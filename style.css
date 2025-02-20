@@ -29,9 +29,6 @@ body.no-scroll {
     position: relative; /* Assure que l'image reste dans son conteneur */
     top: 0;             /* L'image commence bien en haut */
 }
-
-}
-
 /* Gifs - Galerie et Contact */
 .gif-button {
     width: 15vw;  /* Taille réduite des GIFs */
