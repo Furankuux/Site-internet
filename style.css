@@ -164,6 +164,9 @@ body.no-scroll {
     object-fit: cover;
     z-index: -1; /* Derrière le contenu */
 }
+#background-video {
+    pointer-events: none; /* Désactive les interactions avec la vidéo */
+}
 
 /* Style spécifique pour la nouvelle page */
 .nouvelle-page {
