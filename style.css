@@ -224,7 +224,8 @@ body.no-scroll {
     height: auto;
     cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+
+@media (max-width: 768px) {
   .gif-button {
     width: 30vw;
     height: auto;
