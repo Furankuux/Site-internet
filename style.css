@@ -26,11 +26,15 @@ body.no-scroll {
     width: 70vw;  /* Taille réduite du logo */
     height: auto;
     margin-bottom: 5vw;
+    position: relative; /* Assure que l'image reste dans son conteneur */
+    top: 0;             /* L'image commence bien en haut */
+}
+
 }
 
 /* Gifs - Galerie et Contact */
 .gif-button {
-    width: 40vw;  /* Taille réduite des GIFs */
+    width: 15vw;  /* Taille réduite des GIFs */
     height: auto;
     margin: 5vw;
 }
@@ -73,8 +77,8 @@ body.no-scroll {
     text-decoration: none;
     text-align: center;
     display: block;
-    width: 50vw;
-    height: 30vw;
+    width: 20vw;
+    height: auto;
     transition: background-color 0.3s;
 }
 
@@ -102,7 +106,7 @@ body.no-scroll {
     width: 90%;
     max-width: 31.25vw;
     text-align: center; /* Centre le texte */
-    font-size: 5vw;
+    font-size: 2vw;
     color: white;
     margin: 1.25vw auto; /* Centre le bloc */
     font-family: "Smooch Sans", serif;
@@ -218,3 +222,50 @@ body.no-scroll {
     height: auto;
     margin-bottom: 1.04vw;
 }
+.social-button {
+    width: 30vw;
+    height: auto;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .gif-button {
+    width: 30vw;
+    height: auto;
+    margin: 5vw;
+}
+#infoText {
+    width: 90%;
+    max-width: 31.25vw;
+    text-align: center; /* Centre le texte */
+    font-size: 5vw;
+    color: white;
+    margin: 1.25vw auto; /* Centre le bloc */
+    font-family: "Smooch Sans", serif;
+    text-shadow: 0.104vw 0.104vw 0.21vw black; /* Ombre noire */
+}
+  .logo {
+    width: 70vw;  /* Taille réduite du logo */
+    height: auto;
+    margin-bottom: 5vw;
+}
+  .menu-button {
+    padding: 0.625vw 1.25vw;
+    background-color: #deb887; /* Fond doré pour les boutons */
+    color: #000; /* Texte noir pour contraster avec le fond doré */
+    font-weight: bold;
+    border-radius: 0.42vw;
+    margin-top: 1.04vw; /* Espace entre l'image et le bouton */
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 20vw;
+    height: 5vw;
+    transition: background-color 0.3s;
+}
+  .social-button {
+    width: 40vw;
+    height: auto;
+    cursor: pointer;
+}
+  }
+  
