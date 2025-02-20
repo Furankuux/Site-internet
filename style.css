@@ -27,7 +27,7 @@ body.no-scroll {
     height: auto;
     margin-bottom: 5vw;
     position: relative; /* Assure que l'image reste dans son conteneur */
-    top: 7;             /* L'image commence bien en haut */
+    top: 7vw;             /* L'image commence bien en haut */
 }
 /* Gifs - Galerie et Contact */
 .gif-button {
