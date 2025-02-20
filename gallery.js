@@ -1,3 +1,7 @@
+if (window.matchMedia("(max-width: 768px)").matches) {
+    document.body.classList.add("mobile");
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const randomImage = document.getElementById("randomImage");
     const audioName = document.getElementById("audioName"); // Élément pour afficher le nom du fichier audio
