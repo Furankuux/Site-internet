@@ -225,13 +225,14 @@ body.no-scroll {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .gif-button {
+/* Styles pour mobile, appliqués uniquement si la classe .mobile est présente sur <body> */
+.mobile .gif-button {
     width: 30vw;
     height: auto;
     margin: 5vw;
 }
-#infoText {
+
+.mobile #infoText {
     width: 90%;
     max-width: 31.25vw;
     text-align: center; /* Centre le texte */
@@ -241,12 +242,14 @@ body.no-scroll {
     font-family: "Smooch Sans", serif;
     text-shadow: 0.104vw 0.104vw 0.21vw black; /* Ombre noire */
 }
-  .logo {
+
+.mobile .logo {
     width: 70vw;  /* Taille réduite du logo */
     height: auto;
     margin-bottom: 5vw;
 }
-  .menu-button {
+
+.mobile .menu-button {
     padding: 0.625vw 1.25vw;
     background-color: #deb887; /* Fond doré pour les boutons */
     color: #000; /* Texte noir pour contraster avec le fond doré */
@@ -259,67 +262,5 @@ body.no-scroll {
     width: 20vw;
     height: 5vw;
     transition: background-color 0.3s;
-}
-  .social-button {
-    width: 40vw;
-    height: auto;
-    cursor: pointer;
-}
-  }
-  /* 🖥️ Styles pour grands écrans */
-@media screen and (min-width: 769px) {
-    .gif-button {
-        width: 15vw; /* Taille adaptée pour grands écrans */
-        height: auto;
-        margin: 5vw;
-    }
-
-    #infoText {
-        width: 90%;
-        max-width: 31.25vw;
-        text-align: center; /* Centre le texte */
-        font-size: 2vw; /* Taille normale pour grands écrans */
-        color: white;
-        margin: 1.25vw auto; /* Centre le bloc */
-        font-family: "Smooch Sans", serif;
-        text-shadow: 0.104vw 0.104vw 0.21vw black; /* Ombre noire */
-    }
-
-    .logo {
-        width: 25vw;  /* Taille du logo pour grands écrans */
-        height: auto;
-        margin-bottom: 5vw;
-    }
-
-    .menu-button {
-        padding: 0.625vw 1.25vw;
-        background-color: #deb887; /* Fond doré pour les boutons */
-        color: #000; /* Texte noir pour contraster avec le fond doré */
-        font-weight: bold;
-        border-radius: 0.42vw;
-        margin-top: 1.04vw; /* Espace entre l'image et le bouton */
-        text-decoration: none;
-        text-align: center;
-        display: block;
-        width: 20vw;
-        height: auto;
-        transition: background-color 0.3s;
-    }
-
-    .social-button {
-        width: 30vw; /* Taille normale pour grands écrans */
-        height: auto;
-        cursor: pointer;
-    }
-
-    #joinImage {
-        width: 80vw; /* Taille adaptée pour grands écrans */
-        height: auto;
-    }
-
-    #contact-image {
-        width: 80vw;
-        height: auto;
-    }
 }
 
