@@ -24,7 +24,14 @@ body.Galerie {
     border-radius: 0.52vw;
     transition: transform 0.3s ease;
 }
-
+.mobile .random-image{
+    width: 60vw;
+    height: auto;
+    display: block;
+    margin: 1.04vw auto;
+    border-radius: 0.52vw;
+    transition: transform 0.3s ease;
+}
 .random-image:hover {
     transform: scale(1.05); /* Effet de zoom au survol */
 }
@@ -32,11 +39,16 @@ body.Galerie {
 /* Affichage du nom de la musique en dessous de l'image */
 .audio-name {
     font-size: 1.04vw;
-    color: white;
+    color: green;
     text-align: center;
     margin-top: 0.52vw;
 }
-
+.mobile .audio-name {
+    font-size: 4vw;
+    color: green;
+    text-align: center;
+    margin-top: 0.52vw;
+}
 /* Barre de réglage du volume */
 .volume-container {
     width: 80%;
@@ -88,12 +100,21 @@ body.Galerie {
     max-width: 31.25vw;
     text-align: center;
     font-size: 1.25vw;
-    color: white;
+    color: pink;
     margin: 1.25vw auto;
     font-family: "Smooch Sans", serif;
     text-shadow: 0.1042vw 0.1042vw 0.2083vw black; /* Ombre noire */
 }
-
+.mobile #infoText {
+    width: 90%;
+    max-width: 31.25vw;
+    text-align: center;
+    font-size: 5vw;
+    color: pink;
+    margin: 1.25vw auto;
+    font-family: "Smooch Sans", serif;
+    text-shadow: 0.1042vw 0.1042vw 0.2083vw black; /* Ombre noire */
+}
 /* Style du bouton retour */
 .menu-button {
     padding: 0.625vw 1.25vw;
@@ -141,6 +162,13 @@ body.Galerie {
 /* Style de l'image "more.png" */
 .more-image {
     width: 7.81vw; /* Ajustez la taille de l'image comme vous le souhaitez */
+    height: auto;
+    display: block;
+    margin: 1.04vw auto; /* Centré entre le texte et le bouton */
+    transition: transform 0.3s ease; /* Effet de zoom au survol */
+}
+.mobile .more-image {
+    width: 25vw; /* Ajustez la taille de l'image comme vous le souhaitez */
     height: auto;
     display: block;
     margin: 1.04vw auto; /* Centré entre le texte et le bouton */
